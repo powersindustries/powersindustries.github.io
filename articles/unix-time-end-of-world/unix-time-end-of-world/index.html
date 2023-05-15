@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-us"><head><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name">The World Will End on January 19th, 2038 at 3:14:07 UTC | Lukas Powers</title>
+<meta property="og:title" content="The World Will End on January 19th, 2038 at 3:14:07 UTC | Lukas Powers" />
+<meta name="twitter:title" content="The World Will End on January 19th, 2038 at 3:14:07 UTC | Lukas Powers" />
+<meta itemprop="name" content="The World Will End on January 19th, 2038 at 3:14:07 UTC | Lukas Powers" />
+<meta name="application-name" content="The World Will End on January 19th, 2038 at 3:14:07 UTC | Lukas Powers" />
+<meta property="og:site_name" content="Lukas Powers" />
+
+<meta name="description" content="Software Engineer">
+<meta itemprop="description" content="Software Engineer" />
+<meta property="og:description" content="Software Engineer" />
+<meta name="twitter:description" content="Software Engineer" />
+
+<meta property="og:locale" content="en-us" />
+<meta name="language" content="en-us" />
+
+
+
+  <meta itemprop="image" content="https://powersindustries.github.io/" />
+  <meta property="og:image" content="https://powersindustries.github.io/" />
+  <meta name="twitter:image" content="https://powersindustries.github.io/" />
+  <meta name="twitter:image:src" content="https://powersindustries.github.io/" />
+
+
+
+
+
+<meta name="generator" content="Hugo 0.111.3">
+
+    
+
+    <link rel="canonical" href="https://powersindustries.github.io/articles/unix-time-end-of-world/unix-time-end-of-world/">
+    <link href="/style.min.cbde0729d67615e409198151c39504b0084a692ed31f8d4578d96b99d0938731.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+
+
+    
+
+    
+
+    
+
+    
+
+
+    
+    
+
+</head>
+<body data-theme = "dark" class="notransition">
+<script src="/js/themeLoader.min.3c3396ae9effcbd02e7064baa7b435ffe6560bcd7fec0b428a470d3a128f2220.js"></script>
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="https://powersindustries.github.io/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title>Home</title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/">
+                        Home
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/projects/">
+                        Projects
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link active" href="/articles/">
+                        Articles
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/contact/">
+                        Contact
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">The World Will End on January 19th, 2038 at 3:14:07 UTC</h1>
+                
+                <div class="post-meta">
+                    <time datetime="2022-12-27T00:00:00&#43;00:00" itemprop="datePublished"> Dec 27, 2022 </time>
+                </div>
+            </header><div class="page-content">
+                <br>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/xHa6a3FtPJg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<br>
+<hr>
+<p>On the eve of December 31st, 1999, people danced in the streets with excitement as a new millennium was about to begin. Most people that evening partied not knowing that the software engineers around them were panicking waiting for the end of the world. Luckily, this world ending event never happened and the only bad thing to come from the new year was NSYNC.</p>
+<p>In the late 90s, a flaw in computers called the “Millennium Bug” threatened to destroy all computer and server infrastructure around the world. This flaw was caused by how computers saved the year value in dates. Before the year 2000, many computers saved only the last two digits of a year. For instance, the year 1999 was saved as just “99” in the computer.</p>
+<p>While this may sound odd today, this was a genius move made by engineers in the 70s. Back in medieval times, engineers were constantly rubbing up against memory constraints. For instance, 1977’s Apple 2 computer had 48 KB of RAM. Yes, you heard me correctly. 48 KB, not MB or GB. I’m currently writing this article on a laptop with 16 GB of memory. Oh, how times have changed.</p>
+<p>A few decades of computing later, this legacy coding practice continued until it came to a head in the late 90s. Leading up to the new millennium, software engineers quickly updated their systems to save the year value as a full four-digit number. In the end, the hard work of these engineers paid off and humanity was saved from returning to the stone age.</p>
+<p>On January 1st, 2000, engineers across the world breathed a collective sigh of relief knowing their hard work paid off. Little did they know, another time-based world ending event was right around the corner.</p>
+<p><em>The next world ending event will happen on January 19th, 2038 at 3:14:07 UTC.</em></p>
+<p>Why is the world going to end on January 19th, 2038 at 3:14:07 UTC? This date and time (now to be referred to as Y38) is the largest date that can be held by Unix Time in a 32-bit machine.</p>
+<p>For the engineers hearing this for the first time, the existential dread is probably setting in. For the non-engineers reading this, they’re probably wondering, “What the heck is Unix Time and why do I care?” Very briefly, let me explain.</p>
+<p>In short, Unix Time is the way computers internally tell time. The way it works is that Unix Time measures the number of seconds that have passed since January 1st, 1970 at 00:00:00 UTC. This date is known as the “Unix Epoc Date.” When humans share dates with one another, we send the day, month, year, and time separately. While this is easy for humans to understand, it is not very efficient. Instead, computers represent the entire date and time in a single long-form number. For instance, I am currently writing this on December 17th, 2022 at 2:11pm. Unix Time represents this as 1671307681 because 1671307681 seconds have passed since the Unix’s Epoc Date. Click <a href="https://www.unixtimestamp.com/">here</a> to see the current time as a Unix timestamp.</p>
+<p>In a 32-bit system, Unix Time is saved as an int32 variable. An int32 is a positive or negative number that ranges from ±2,147,483,647. After you attempt to increase an int32 variable past its max limit (+/-2,147,483,647), the number will jump down to its lower limit (-2,147,483,647) turning the number negative.</p>
+<p>Why is Unix Time important outside of the calendar feature preinstalled on most computers? Scarily, Unix Time is used in many important underlining processes within a computer. It acts as a reliable timestamp and without it, computers will be inoperable.</p>
+<p>With this new understand of Unix Time and the int32 data type, what happens on Y38? January 19th, 2038 at 3:14:07 UTC is exactly 2,147,483,647 seconds after Unix Time’s Epoc Date (January 1st, 1970 at 00:00:00 UTC). Any time that passes after Y38 will make Unix Time become a negative number, causing 32-bit computers across the world to experience <em>unexpected behaviors.</em></p>
+<p>Before you panic and start Googling Amish communities in your area, there are solutions to this problem. It will take some engineering effort and possibly money, but let me assure you. There are solutions to this problem. Take a deep breath or count to three. It will be OK.</p>
+<p>The first solution is to cycle out old 32-bit machines and replace them with updated machines running 64-bit architecture. 64-bit systems save Unix Time as an int64 number. An int64 number is large enough to buy us another 292 billion years before we have to do this over again. While this sounds great in theory, this solution will require replacing old computers with new ones costing a fortune in the process. Many companies and organizations may be reluctant to do this because of the cost. Luckily, there are other fixes to this problem.</p>
+<p>The second solution is for engineers to update legacy source code to use the 64-bit version of Unix Time. While this may not be possible for some proprietary systems, most operating systems and languages support a version of Unix Time saved as an int64. For instance, Linux has time64, C++ has time64, JavaScript probably has some library for this, etc. Along with Linux, Windows and MacOS have similar 64-bit time equivalents available for engineers to use. While this solution will save on money, it will cost time to implement.</p>
+<p>Then for the final solution, the fix does not cost money and is not implementable by a single individual. Instead, the solution is more of a discussion amongst engineers. Engineers from various backgrounds have started gathering in efforts to change the Unix Epoc Date. These engineers want to move the date from January 1st, 1970 to January 1st, 2000. Even though changing the Unix Epoc Date will not fix the issue forever, it will buy engineers time to come up with a more permanent solution.</p>
+<p>Just like the engineers in the 90s looking at the Millennium Bug before them, we still have a few years left to fix this problem. We know the date of this incoming comet hurling towards us. All we need to do is move it off course. With a little bit of time and effort, I believe that today&rsquo;s engineers can come up with a solution and prevent yet another world ending event.</p>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+<a href="https://github.com/powersindustries" target="_blank" rel="noopener noreferrer me"
+    title="Github">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+</a>
+<a href="https://www.linkedin.com/in/lukas-powers-428a99105/" target="_blank" rel="noopener noreferrer me"
+    title="Linkedin">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+    <rect x="2" y="9" width="4" height="12"></rect>
+    <circle cx="4" cy="4" r="2"></circle>
+</svg>
+</a>
+<a href="index.xml" target="_blank" rel="noopener noreferrer me"
+    title="Rss">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 11a9 9 0 0 1 9 9" />
+    <path d="M4 4a16 16 0 0 1 16 16" />
+    <circle cx="5" cy="19" r="1" />
+</svg>
+</a>
+</div>
+    <small class="footer_copyright">
+        © 2023 Lukas Powers.
+        Powered by <a href="https://github.com/hugo-sid/hugo-blog-awesome" target="_blank" rel="noreferrer noopener">Hugo blog awesome</a>
+        theme on
+        <a href="https://gohugo.io" target="_blank" rel="noreferrer noopener">Hugo</a>.
+    </small>
+</footer>
+
+
+    
+    <script src="https://powersindustries.github.io/js/themeSwitchnMenu.min.0904267a815ebda73875ff409ca6223ffd3f37bf08383da61dd3411fd2ef8b90.js" integrity="sha256-CQQmeoFevac4df9AnKYiP/0/N78IOD2mHdNBH9Lvi5A="></script>
+
+</body>
+</html>

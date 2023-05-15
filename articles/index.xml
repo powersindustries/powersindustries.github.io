@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Articles on Lukas Powers</title>
+    <link>https://powersindustries.github.io/articles/</link>
+    <description>Recent content in Articles on Lukas Powers</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 11 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://powersindustries.github.io/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Friend Ryu</title>
+      <link>https://powersindustries.github.io/articles/my-friend-ryu/my-friend-ryu/</link>
+      <pubDate>Tue, 11 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://powersindustries.github.io/articles/my-friend-ryu/my-friend-ryu/</guid>
+      <description>As of today, Street Fighter 6 is less than two months away from release. The fighting game community (FGC) is chomping at the bit to get their hands on the game. With the release of several gameplay trailers and two closed beta tests, there is lots of chatter and excitement for the release of Street Fighter 6.
+Throughout the buzz surrounding the game, there is one piece of information I’m not seeing anyone talk about.</description>
+    </item>
+    
+    <item>
+      <title>The Florida Project</title>
+      <link>https://powersindustries.github.io/articles/florida-project/florida-project/</link>
+      <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://powersindustries.github.io/articles/florida-project/florida-project/</guid>
+      <description>A few months ago, I went on vacation to visit family in Florida. During the trip, I submitted the initial commit for a Git repo called the &amp;ldquo;Florida Project.&amp;rdquo; The goal of the project was to make a simple game using the MarkTwo engine. Eventually, the Florida Project turned into the game you see before you.
+While working on a previous project, one of the biggest stressors for the team was that we were creating a game and its engine simultaneously.</description>
+    </item>
+    
+    <item>
+      <title>The World Will End on January 19th, 2038 at 3:14:07 UTC</title>
+      <link>https://powersindustries.github.io/articles/unix-time-end-of-world/unix-time-end-of-world/</link>
+      <pubDate>Tue, 27 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://powersindustries.github.io/articles/unix-time-end-of-world/unix-time-end-of-world/</guid>
+      <description>On the eve of December 31st, 1999, people danced in the streets with excitement as a new millennium was about to begin. Most people that evening partied not knowing that the software engineers around them were panicking waiting for the end of the world. Luckily, this world ending event never happened and the only bad thing to come from the new year was NSYNC.
+In the late 90s, a flaw in computers called the “Millennium Bug” threatened to destroy all computer and server infrastructure around the world.</description>
+    </item>
+    
+    <item>
+      <title>Video Games Are Entering the 70s</title>
+      <link>https://powersindustries.github.io/articles/video-games-70s/video-games-70s/</link>
+      <pubDate>Mon, 07 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://powersindustries.github.io/articles/video-games-70s/video-games-70s/</guid>
+      <description>The 1970s was a revolutionary decade for the film industry. Many film historians consider the 70s as a turning point for the medium. In a 10 year span, legendary films like Alien, Apocalypse Now, The Godfather, Halloween, Jaws, Taxi Driver, and many others were released to the masses. Before the 70s, movies like My Fair Lady, The Sound of Music, The Wizard of Oz, and other similar films dominated the box office.</description>
+    </item>
+    
+    <item>
+      <title>Timmy, Johnny, and Spike... Some of the time</title>
+      <link>https://powersindustries.github.io/articles/timmy-johnny-spike/timmy-johnny-spike/</link>
+      <pubDate>Sun, 23 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://powersindustries.github.io/articles/timmy-johnny-spike/timmy-johnny-spike/</guid>
+      <description>Original Article
+On December 3rd, 2013, Mark Rosewater penned one of Magic the Gathering’s most famous articles called Timmy, Johnny, and Spike. In the article, Rosewater explains the idea of “Psychographic Profiles.” These psychographic profiles are categories used to describe different kinds of Magic players and what they find fun in the game. Wizards of the Coast regularly considers these profiles when designing cards and game mechanics. The three profiles have been coined: Timmy, Johnny, and Spike.</description>
+    </item>
+    
+    <item>
+      <title>Preventing the Collapse of Civilization - Jonathan Blow</title>
+      <link>https://powersindustries.github.io/articles/preventing-end-world/preventing-end-world/</link>
+      <pubDate>Mon, 17 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://powersindustries.github.io/articles/preventing-end-world/preventing-end-world/</guid>
+      <description>In this famous lecture, Jonathan Blow gives a chilling warning to all software engineers. From a conference in Russia, Blow describes how past civilizations had technologies that were lost to time because the secrets of how to maintain these technologies were not passed down to the next generation of engineers. To solidify his point, Blow turns to the United States vs Soviet Union space race as a fitting example. Blow theorizes that the reason the world has yet to travel back to space is not because it is expensive, but because humanity probably does not remember how to.</description>
+    </item>
+    
+    <item>
+      <title>Easy to Learn, Hard to Master</title>
+      <link>https://powersindustries.github.io/articles/easy-to-learn/easy-to-learn/</link>
+      <pubDate>Mon, 10 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://powersindustries.github.io/articles/easy-to-learn/easy-to-learn/</guid>
+      <description>A large part of growing up in Wisconsin is being able to entertain yourself for months at a time. Since it snows for most of the year, you have to learn to bide your time and survive the harsh winter conditions. A popular outdoor activity during the winter months is skiing and snowboarding. Unlike what is pictured in the movies, skiing is not this glamorous sport that affluent characters like James Bond enjoy.</description>
+    </item>
+    
+  </channel>
+</rss>

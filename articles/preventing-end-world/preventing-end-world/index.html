@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-us"><head><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name">Preventing the Collapse of Civilization - Jonathan Blow | Lukas Powers</title>
+<meta property="og:title" content="Preventing the Collapse of Civilization - Jonathan Blow | Lukas Powers" />
+<meta name="twitter:title" content="Preventing the Collapse of Civilization - Jonathan Blow | Lukas Powers" />
+<meta itemprop="name" content="Preventing the Collapse of Civilization - Jonathan Blow | Lukas Powers" />
+<meta name="application-name" content="Preventing the Collapse of Civilization - Jonathan Blow | Lukas Powers" />
+<meta property="og:site_name" content="Lukas Powers" />
+
+<meta name="description" content="Software Engineer">
+<meta itemprop="description" content="Software Engineer" />
+<meta property="og:description" content="Software Engineer" />
+<meta name="twitter:description" content="Software Engineer" />
+
+<meta property="og:locale" content="en-us" />
+<meta name="language" content="en-us" />
+
+
+
+  <meta itemprop="image" content="https://powersindustries.github.io/" />
+  <meta property="og:image" content="https://powersindustries.github.io/" />
+  <meta name="twitter:image" content="https://powersindustries.github.io/" />
+  <meta name="twitter:image:src" content="https://powersindustries.github.io/" />
+
+
+
+
+
+<meta name="generator" content="Hugo 0.111.3">
+
+    
+
+    <link rel="canonical" href="https://powersindustries.github.io/articles/preventing-end-world/preventing-end-world/">
+    <link href="/style.min.cbde0729d67615e409198151c39504b0084a692ed31f8d4578d96b99d0938731.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+
+
+    
+
+    
+
+    
+
+    
+
+
+    
+    
+
+</head>
+<body data-theme = "dark" class="notransition">
+<script src="/js/themeLoader.min.3c3396ae9effcbd02e7064baa7b435ffe6560bcd7fec0b428a470d3a128f2220.js"></script>
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="https://powersindustries.github.io/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title>Home</title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/">
+                        Home
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/projects/">
+                        Projects
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link active" href="/articles/">
+                        Articles
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/contact/">
+                        Contact
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">Preventing the Collapse of Civilization - Jonathan Blow</h1>
+                
+                <div class="post-meta">
+                    <time datetime="2021-05-17T00:00:00&#43;00:00" itemprop="datePublished"> May 17, 2021 </time>
+                </div>
+            </header><div class="page-content">
+                <br>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/pW-SOdj4Kkk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<br>
+<hr>
+<p>In this famous lecture, Jonathan Blow gives a chilling warning to all software engineers. From a conference in Russia, Blow describes how past civilizations had technologies that were lost to time because the secrets of how to maintain these technologies were not passed down to the next generation of engineers. To solidify his point, Blow turns to the United States vs Soviet Union space race as a fitting example. Blow theorizes that the reason the world has yet to travel back to space is not because it is expensive, but because humanity probably does not remember how to.</p>
+<p>After shocking the crowd, Blow turns to problems with modern software. According to Blow, the quality of software today has decreased compared to software of the past. The amount of bugs the average user puts up with is astonishing compared to older software.</p>
+<p>Blow believes current software engineers heavily rely on the advancements in hardware to make today’s software work. In the past, software engineers were constantly battling the hardware limitations of the machines they were programming for. Today, engineers work with almost unlimited resources in both hardware and information. If a program runs out of memory, just dip into some virtual memory. If a programmer has any questions, a quick Stack Overflow search is the answer. Similar to veterans hardened by wartime conflicts, the strict hardware limitations of the past required the engineers working with them to come up with extremely efficient and creative solutions. This in-turn made these engineers better.</p>
+<p>Towards the end of the lecture, Blow explains how modern software engineers can undo the damage that has been done. To reverse our impending doom, today’s software engineers need to go back and learn lower level languages and processes. After teaching themselves, they need to teach the next generations this information so that humanity does not forget. Many important systems like banks, payroll, weapon systems, etc all run on legacy languages and infrastructures that modern engineers no longer learn.</p>
+<p>After completing the video for the first time, I sat for a few moments as the screen turned to black. Scrolling down to the comment section (never a good idea), many of the comments said things like, “Old man shakes fist at cloud,” along with other poorly written insults. Meanwhile, I sat in silence thinking about what I just heard. After letting Blow’s words soak in, I realized something.</p>
+<p><em>Jonathan Blow is right.</em></p>
+<p>Today, most software engineers learn specific languages with the hopes of getting a job. With the world becoming online, the current software engineering market is filled with high paying web developer positions. Most websites runs on high level languages like JavaScript, HTML/CSS, Python, and C#. Software engineers can leave school, accept a web developer position, and completely miss out on learning low level principles like memory management, cpu usage, and even project setup. All of these high level languages take care of these low level features out of sight from the developer. On top of this, many of these languages require package managers and external libraries to run at all. Instead of learning how to code, many modern engineers learn the quirks of their language environment instead of universal engineering principles.</p>
+<p>For the future, we need to be better. If you are a modern engineer and Jonathan Blow has gotten to you, do not be disheartened. It is never too late to make a change.</p>
+<p>For starters, modern engineers need to go back and learn basic engineering principles. The best way to learn is by doing. Modern software engineers need to learn at least one low to middle level programming language. I&rsquo;m not saying to go nuclear and start learning assembly language or machine code (I currently am learning assembly language), but pick up a new language that requires the user to manage their own resources. Most new software engineers learned to code using scripting languages like JavaScript or Python. While they have their place, these scripting languages wont teach the user how to manage their own resources.</p>
+<p>On top of this, modern engineers need to stop being lazy. In the video, Blow shows a small clip of Ken Thompson talking about how he created the Unix operating system. Users needed to be able to operate a computer easier, so Thompson spent three weeks of his own time and created Unix from scratch. Thompson did not use any off the shelf libraries or dependencies. He did not clone a Github repo or grab boiler plate code from a website. Instead, he created an editor, assembler, and an operating system each in one week successions.</p>
+<p>I believe that engineers today should adopt this Ken Thompson mindset. We need to stop relying on other people’s code and do everything for ourselves. While it is convent to adopt someone else’s code for our own purposes, we miss out on the learning opportunity we could have had. At the cost of our own time, we lose out on gaining fundamental knowledge by accepting the Github handout. I believe the upfront cost of time is worth it in the end.</p>
+<p>It is never too late to make a change. It is time for us to take control of our destiny and prevent the collapse of civilization.</p>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+<a href="https://github.com/powersindustries" target="_blank" rel="noopener noreferrer me"
+    title="Github">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+</a>
+<a href="https://www.linkedin.com/in/lukas-powers-428a99105/" target="_blank" rel="noopener noreferrer me"
+    title="Linkedin">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+    <rect x="2" y="9" width="4" height="12"></rect>
+    <circle cx="4" cy="4" r="2"></circle>
+</svg>
+</a>
+<a href="index.xml" target="_blank" rel="noopener noreferrer me"
+    title="Rss">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 11a9 9 0 0 1 9 9" />
+    <path d="M4 4a16 16 0 0 1 16 16" />
+    <circle cx="5" cy="19" r="1" />
+</svg>
+</a>
+</div>
+    <small class="footer_copyright">
+        © 2023 Lukas Powers.
+        Powered by <a href="https://github.com/hugo-sid/hugo-blog-awesome" target="_blank" rel="noreferrer noopener">Hugo blog awesome</a>
+        theme on
+        <a href="https://gohugo.io" target="_blank" rel="noreferrer noopener">Hugo</a>.
+    </small>
+</footer>
+
+
+    
+    <script src="https://powersindustries.github.io/js/themeSwitchnMenu.min.0904267a815ebda73875ff409ca6223ffd3f37bf08383da61dd3411fd2ef8b90.js" integrity="sha256-CQQmeoFevac4df9AnKYiP/0/N78IOD2mHdNBH9Lvi5A="></script>
+
+</body>
+</html>
